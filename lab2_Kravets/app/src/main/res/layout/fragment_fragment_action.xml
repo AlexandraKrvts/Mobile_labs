@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/main_frag"
+              android:layout_width="match_parent" android:layout_height="match_parent"
+              android:background="@android:color/holo_purple" android:orientation="vertical"
+              tools:context=".FragmentAction">
+
+    <EditText android:id="@+id/text_editor"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="60dp"
+              android:gravity="center"
+              android:hint="Type any text"
+              android:textColor="@android:color/white"
+              android:textColorHint="#66FFFFFF" android:textSize="25dp"/>
+    <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="80dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+        <RadioButton
+                android:id="@+id/first_var"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:text="40px"
+                android:textSize="40px"
+                tools:ignore="MissingConstraints"/>
+        <RadioButton
+                android:id="@+id/second_var"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:text="60px"
+                android:textSize="60px"
+                tools:ignore="MissingConstraints"/>
+        <RadioButton
+                android:id="@+id/third_var"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:text="80px"
+                android:textSize="80px"
+                tools:ignore="MissingConstraints"/>
+        <RadioButton
+                android:id="@+id/forth_var"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:text="100px"
+                android:textSize="100px"
+                tools:ignore="MissingConstraints"/>
+    </RadioGroup>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_gravity="center" android:layout_marginTop="70dp">
+        <Button android:id="@+id/clear_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D8300C"
+                android:text="Clear"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+        />
+        <Button
+                android:id="@+id/check_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="0dp"
+                android:background="#2BB921"
+                android:text="OK"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
